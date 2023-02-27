@@ -1,4 +1,4 @@
-const CONFIG = {"version":"0.1.9","hostname":"http://example.com","root":"/","statics":"/","favicon":{"normal":"assets/favicon.ico","hidden":"assets/failure.ico"},"darkmode":false,"auto_dark":{"enable":true,"start":20,"end":7},"auto_scroll":true,"js":{"chart":"npm/frappe-charts@1.5.0/dist/frappe-charts.min.iife.min.js","copy_tex":"npm/katex@0.12.0/dist/contrib/copy-tex.min.js","fancybox":"combine/npm/jquery@3.5.1/dist/jquery.min.js,npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js,npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"},"css":{"valine":"css/comment.css","katex":"npm/katex@0.12.0/dist/katex.min.css","mermaid":"css/mermaid.css","fancybox":"combine/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"},"loader":{"start":true,"switch":false},"search":null,"outime":{"enable":true,"days":90},"quicklink":{"timeout":3000,"priority":true},"playerAPI":"https://api.injahow.cn","disableVL":false,"fireworks":["rgba(255,182,185,.9)","rgba(250,227,217,.9)","rgba(187,222,214,.9)","rgba(138,198,209,.9)"]};const getDocHeight = () => $dom('main > .inner').offsetHeight;
+const CONFIG = {"version":"0.2.0-rc3","hostname":"https://dailydawn.github.io","root":"/","statics":"/","favicon":{"normal":"assets/favicon.ico","hidden":"assets/failure.ico"},"darkmode":false,"auto_dark":{"enable":true,"start":20,"end":7},"auto_scroll":true,"js":{"chart":"npm/frappe-charts@1.5.0/dist/frappe-charts.min.iife.min.js","copy_tex":"npm/katex@0.12.0/dist/contrib/copy-tex.min.js","fancybox":"combine/npm/jquery@3.5.1/dist/jquery.min.js,npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js,npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"},"css":{"valine":"css/comment.css","katex":"npm/katex@0.12.0/dist/katex.min.css","mermaid":"css/mermaid.css","fancybox":"combine/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"},"loader":{"start":true,"switch":false},"search":null,"outime":{"enable":true,"days":90},"quicklink":{"timeout":3000,"priority":true},"playerAPI":"https://api.injahow.cn","disableVL":false,"fireworks":["rgba(255,182,185,.9)","rgba(250,227,217,.9)","rgba(187,222,214,.9)","rgba(138,198,209,.9)"]};const getDocHeight = () => $dom('main > .inner').offsetHeight;
 const $dom = (selector, element = document) => {
     if (selector[0] === '#') {
         return element.getElementById(selector.substring(1));
@@ -105,13 +105,12 @@ Object.assign(HTMLElement.prototype, {
     },
     _class: function (type, className, display) {
         const classNames = className.indexOf(' ') ? className.split(' ') : [className];
-        const that = this;
-        classNames.forEach(function (name) {
+        classNames.forEach((name) => {
             if (type === 'toggle') {
-                that.classList.toggle(name, display);
+                this.classList.toggle(name, display);
             }
             else {
-                that.classList[type](name);
+                this.classList[type](name);
             }
         });
     },
@@ -150,7 +149,7 @@ const getScript = function (url, callback, condition) {
         let script = document.createElement('script');
         script.onload = function (_, isAbort) {
             if (isAbort || !script.readyState) {
-                console.log("abort!");
+                console.log('abort!');
                 script.onload = null;
                 script = undefined;
                 if (!isAbort && callback)
@@ -301,7 +300,7 @@ const pageScroll = function (target, offset, complete) {
     anime(opt);
 };
 const statics = CONFIG.statics.indexOf('//') > 0 ? CONFIG.statics : CONFIG.root;
-const scrollAction = { x: undefined, y: undefined };
+const scrollAction = { x: 0, y: 0 };
 let diffY = 0;
 let originTitle, titleTime;
 const BODY = document.getElementsByTagName('body')[0];
@@ -355,7 +354,7 @@ const lazyload = lozad('img, [data-background-image]', {
     }
 });
 const Loader = {
-    timer: null,
+    timer: undefined,
     lock: false,
     show: function () {
         clearTimeout(this.timer);
@@ -406,7 +405,7 @@ const themeColorListener = function () {
     }
 };
 const visibilityListener = function () {
-    let iconNode = $dom('[rel="icon"]');
+    const iconNode = $dom('[rel="icon"]');
     document.addEventListener('visibilitychange', function () {
         switch (document.visibilityState) {
             case 'hidden':
@@ -484,8 +483,7 @@ const scrollHandle = function (event) {
         siteNav.removeClass('down');
         siteNav.toggleClass('up', SHOW);
     }
-    else {
-    }
+    else { }
     scrollAction.y = window.scrollY;
     const scrollPercent = Math.round(Math.min(100 * window.scrollY / contentVisibilityHeight, 100)) + '%';
     backToTop.child('span').innerText = scrollPercent;
@@ -589,16 +587,16 @@ const clickMenu = function () {
         event.preventDefault();
         let x = event.offsetX;
         let y = event.offsetY;
-        let winWidth = window.innerWidth;
-        let winHeight = window.innerHeight;
-        let menuWidth = menuElement.offsetWidth;
-        let menuHeight = menuElement.offsetHeight;
+        const winWidth = window.innerWidth;
+        const winHeight = window.innerHeight;
+        const menuWidth = menuElement.offsetWidth;
+        const menuHeight = menuElement.offsetHeight;
         x = winWidth - menuWidth >= x ? x : winWidth - menuWidth;
         y = winHeight - menuHeight >= y ? y : winHeight - menuHeight;
         menuElement.style.top = y + 'px';
         menuElement.style.left = x + 'px';
         menuElement.classList.add('active');
-        $dom.each(".clickSubmenu", (submenu) => {
+        $dom.each('.clickSubmenu', (submenu) => {
             if (x > (winWidth - menuWidth - submenu.offsetWidth)) {
                 submenu.style.left = '-200px';
             }
@@ -1169,7 +1167,7 @@ const pjaxReload = function () {
             menuToggle.removeClass('close');
         });
     }
-    let mainNode = $dom('#main');
+    const mainNode = $dom('#main');
     mainNode.innerHTML = '';
     mainNode.appendChild(loadCat.lastChild.cloneNode(true));
     pageScroll(0);
@@ -1532,7 +1530,7 @@ const sidebarTOC = function () {
         const link = element.child('a.toc-link');
         const anchor = $dom(decodeURI(link.attr('href')));
         if (!anchor)
-            return;
+            return null;
         const alink = anchor.child('a.anchor');
         const anchorScroll = function (event) {
             event.preventDefault();
@@ -1845,7 +1843,7 @@ const mediaPlayer = function (t, config) {
             const el = playlist.el;
             playlist.data.map(function (item, index) {
                 if (item.el) {
-                    return;
+                    return null;
                 }
                 const id = 'list-' + t.player._id + '-' + item.group;
                 let tab = $dom('#' + id);
@@ -1934,7 +1932,7 @@ const mediaPlayer = function (t, config) {
             }, 300);
         }
     };
-    let option = {
+    const option = {
         type: 'audio',
         mode: 'random',
         btns: ['play-pause', 'music'],
@@ -1959,7 +1957,7 @@ const mediaPlayer = function (t, config) {
             }
         }
     };
-    let utils = {
+    const utils = {
         random: function (len) {
             return Math.floor((Math.random() * len));
         },
@@ -2058,25 +2056,24 @@ const mediaPlayer = function (t, config) {
             return this;
         },
         fetch: function () {
-            const that = this;
-            return new Promise(function (resolve, reject) {
+            return new Promise((resolve, reject) => {
                 if (playlist.data.length > 0) {
                     resolve(true);
                 }
                 else {
-                    if (that.options.rawList) {
+                    if (this.options.rawList) {
                         const promises = [];
-                        that.options.rawList.forEach(function (raw, index) {
+                        this.options.rawList.forEach(function (raw, index) {
                             promises.push(new Promise(function (resolve, reject) {
                                 let group = index;
                                 let source;
                                 if (!raw.list) {
                                     group = 0;
-                                    that.group = false;
+                                    this.group = false;
                                     source = [raw];
                                 }
                                 else {
-                                    that.group = true;
+                                    this.group = true;
                                     source = raw.list;
                                 }
                                 utils.fetch(source).then(function (list) {
@@ -2094,7 +2091,7 @@ const mediaPlayer = function (t, config) {
                 if (c) {
                     playlist.create();
                     controller.create();
-                    that.mode();
+                    this.mode();
                 }
             });
         },

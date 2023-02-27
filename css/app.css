@@ -2717,6 +2717,16 @@ main >.inner {
   align-self: flex-end;
   text-align: right;
 }
+.md p,
+.md table,
+.md pre,
+.md blockquote,
+.md img,
+.md .tabs,
+.md .links {
+  content-visibility: auto;
+  contain-intrinsic-size: 979px 1.1em;
+}
 .md p:last-child,
 .md table:last-child,
 .md pre:last-child,
@@ -2725,6 +2735,16 @@ main >.inner {
 .md .tabs:last-child,
 .md .links:last-child {
   margin-bottom: 0;
+}
+.md span {
+  content-visibility: auto;
+  contain-intrinsic-size: 979px 1.1em;
+}
+.md ul,
+.md dd,
+.md ol {
+  content-visibility: auto;
+  contain-intrinsic-size: 979px 3.5em;
 }
 .md ul ul,
 .md dd ul,

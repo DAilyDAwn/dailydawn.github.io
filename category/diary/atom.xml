@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
-    <title>Hexo • Posts by &#34;diary&#34; category</title>
-    <link href="http://example.com" />
+    <id>https://dailydawn.github.io</id>
+    <title>DAilyDAwn&#39;s blog • Posts by &#34;diary&#34; category</title>
+    <link href="https://dailydawn.github.io" />
     <updated>2023-02-24T18:35:50.000Z</updated>
     <category term="First Try" />
     <category term="HelloWorld" />
     <entry>
-        <id>http://example.com/2023/02/25/DAilyDAwn-s-first-try/</id>
+        <id>https://dailydawn.github.io/2023/02/25/DAilyDAwn-s-first-try/</id>
         <title>Hello World</title>
-        <link rel="alternate" href="http://example.com/2023/02/25/DAilyDAwn-s-first-try/"/>
-        <content type="html">&lt;p&gt;欢迎来到DAilyDAwn的博客！这是我第一次尝试使用github x hexo来建立博客，我将在这里分享我的学习经历，Fighting！&lt;/p&gt;
+        <link rel="alternate" href="https://dailydawn.github.io/2023/02/25/DAilyDAwn-s-first-try/"/>
+        <content type="html">&lt;p&gt;欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;p&gt;欢迎来到DAilyDAwn的博客！这是我第一次尝试使用github x hexo来建立博客，我将在这里分享我的学习经历，Fighting！&lt;/p&gt;
+&lt;p&gt;欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;/p&gt;
 </content>
         <category term="First Try" />
         <category term="HelloWorld" />
