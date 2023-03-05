@@ -16,9 +16,9 @@
             <category>First Try</category>
             <category>HelloWorld</category>
             <pubDate>Sat, 25 Feb 2023 02:35:50 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;/p&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;p&gt;欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;br /&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br /&gt;
+ 欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

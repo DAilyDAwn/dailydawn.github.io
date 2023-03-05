@@ -10,9 +10,9 @@
         <id>https://dailydawn.github.io/DAilyDAwn-s-first-try/</id>
         <title>Hello World</title>
         <link rel="alternate" href="https://dailydawn.github.io/DAilyDAwn-s-first-try/"/>
-        <content type="html">&lt;p&gt;欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;/p&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;p&gt;欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;/p&gt;
+        <content type="html">&lt;p&gt;欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;br /&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br /&gt;
+ 欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;/p&gt;
 </content>
         <category term="First Try" />
         <category term="HelloWorld" />
