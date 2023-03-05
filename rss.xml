@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>DAilyDAwn&#39;s blog</title>
+        <title>自由之翼</title>
         <link>https://dailydawn.github.io</link>
         <description>明日复明日，明日何其多</description>
         <language>zh-CN</language>
@@ -10,9 +10,9 @@
         <category>First Try</category>
         <category>HelloWorld</category>
         <item>
-            <guid isPermalink="true">https://dailydawn.github.io/2023/02/25/DAilyDAwn-s-first-try/</guid>
+            <guid isPermalink="true">https://dailydawn.github.io/DAilyDAwn-s-first-try/</guid>
             <title>Hello World</title>
-            <link>https://dailydawn.github.io/2023/02/25/DAilyDAwn-s-first-try/</link>
+            <link>https://dailydawn.github.io/DAilyDAwn-s-first-try/</link>
             <category>First Try</category>
             <category>HelloWorld</category>
             <pubDate>Sat, 25 Feb 2023 02:35:50 +0800</pubDate>
@@ -22,9 +22,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://dailydawn.github.io/2023/02/25/hello-world/</guid>
+            <guid isPermalink="true">https://dailydawn.github.io/hello-world/</guid>
             <title>Hello World</title>
-            <link>https://dailydawn.github.io/2023/02/25/hello-world/</link>
+            <link>https://dailydawn.github.io/hello-world/</link>
             <pubDate>Sat, 25 Feb 2023 01:58:48 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
