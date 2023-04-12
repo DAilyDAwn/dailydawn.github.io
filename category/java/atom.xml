@@ -1,22 +1,17 @@
 <?xml version="1.0"?>
-<rss version="2.0">
-    <channel>
-        <title>自由之翼</title>
-        <link>https://dailydawn.github.io</link>
-        <description>明日复明日，明日何其多</description>
-        <language>zh-CN</language>
-        <pubDate>Sat, 25 Mar 2023 02:35:50 +0800</pubDate>
-        <lastBuildDate>Sat, 25 Mar 2023 02:35:50 +0800</lastBuildDate>
-        <category>学习笔记</category>
-        <category>First Try</category>
-        <category>HelloWorld</category>
-        <item>
-            <guid isPermalink="true">https://dailydawn.github.io/Java-unclassified/</guid>
-            <title>JAVA学习笔记持续更新（待分类和调整）</title>
-            <link>https://dailydawn.github.io/Java-unclassified/</link>
-            <category>学习笔记</category>
-            <pubDate>Sat, 25 Mar 2023 02:35:50 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;这里写一些学习 java 的笔记，还没有按章节分类和调整代码块等工作，暂时粗糙的记录笔记。&lt;br /&gt;
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://dailydawn.github.io</id>
+    <title>自由之翼 • Posts by &#34;java&#34; category</title>
+    <link href="https://dailydawn.github.io" />
+    <updated>2023-03-24T18:35:50.000Z</updated>
+    <category term="学习笔记" />
+    <category term="First Try" />
+    <category term="HelloWorld" />
+    <entry>
+        <id>https://dailydawn.github.io/Java-unclassified/</id>
+        <title>JAVA学习笔记持续更新（待分类和调整）</title>
+        <link rel="alternate" href="https://dailydawn.github.io/Java-unclassified/"/>
+        <content type="html">&lt;p&gt;这里写一些学习 java 的笔记，还没有按章节分类和调整代码块等工作，暂时粗糙的记录笔记。&lt;br /&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br /&gt;
  面向对象编程的本质是：以类的方式组织代码，以对象的组织封装数据&lt;br /&gt;
  A a = new A (); 其中 a 变量称作引用变量，其类型为 A，指向了以 A 类为模板，在堆空间里创建的 A 类对象。&lt;br /&gt;
@@ -184,36 +179,8 @@ int getPriority () 获取线程优先级&lt;br /&gt;
 优缺点：优：可获取线程执行结果 缺：效率较低，获取执行结果时有可能时当前线程受阻塞&lt;br /&gt;
  wait 和 notify 方法（生产者和消费者模式）：Object 类自带。eg：Object o = new Object ();o.wait () 使正在 Object 对象上活动的线程进入无期限等待状态，并且释放之前占有的 o 对象的锁，直至调用 o.notify () 方法唤醒（ 随机 唤醒在 o 上等待的线程且不会释放锁）。&lt;br /&gt;
 notifyAll () 方法：唤醒 o 对象上处于等待的 所有 线程&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://dailydawn.github.io/hello-world/</guid>
-            <title>Hello World</title>
-            <link>https://dailydawn.github.io/hello-world/</link>
-            <pubDate>Fri, 25 Feb 2022 02:35:50 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
-&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://dailydawn.github.io/DAilyDAwn-s-first-try/</guid>
-            <title>Hello World</title>
-            <link>https://dailydawn.github.io/DAilyDAwn-s-first-try/</link>
-            <category>First Try</category>
-            <category>HelloWorld</category>
-            <pubDate>Fri, 25 Feb 2022 02:35:50 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;br /&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br /&gt;
- 欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;/p&gt;
- ]]></description>
-        </item>
-    </channel>
-</rss>
+</content>
+        <category term="学习笔记" />
+        <updated>2023-03-24T18:35:50.000Z</updated>
+    </entry>
+</feed>
