@@ -3,21 +3,7 @@
     <id>https://dailydawn.github.io</id>
     <title>自由之翼</title>
     <link href="https://dailydawn.github.io" />
-    <updated>2023-02-24T18:35:50.000Z</updated>
-    <category term="First Try" />
-    <category term="HelloWorld" />
-    <entry>
-        <id>https://dailydawn.github.io/DAilyDAwn-s-first-try/</id>
-        <title>Hello World</title>
-        <link rel="alternate" href="https://dailydawn.github.io/DAilyDAwn-s-first-try/"/>
-        <content type="html">&lt;p&gt;欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;br /&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br /&gt;
- 欢迎来到 DAilyDAwn 的博客！这是我第一次尝试使用 github x hexo 来建立博客，我将在这里分享我的学习经历，Fighting！&lt;/p&gt;
-</content>
-        <category term="First Try" />
-        <category term="HelloWorld" />
-        <updated>2023-02-24T18:35:50.000Z</updated>
-    </entry>
+    <updated>2022-02-24T18:35:50.000Z</updated>
     <entry>
         <id>https://dailydawn.github.io/hello-world/</id>
         <title>Hello World</title>
@@ -33,6 +19,6 @@
 &lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
 </content>
-        <updated>2023-02-24T17:58:48.444Z</updated>
+        <updated>2022-02-24T18:35:50.000Z</updated>
     </entry>
 </feed>

@@ -1572,8 +1572,7 @@ main >.inner {
   opacity: 0;
   z-index: 0;
   animation: imageAnimation 36s linear infinite 0s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transform-style: preserve-3d;
 }
 #imgs .item:nth-child(2) {
@@ -1836,8 +1835,7 @@ main >.inner {
   font-size: 0.75em;
   display: inline-block;
   transform: rotate(30deg);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 #brand .meta {
   display: flex;
@@ -3145,8 +3143,7 @@ main >.inner {
   right: 0;
   transform-style: preserve-3d;
   transform: translateZ(2rem);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   padding: 0.3rem 1rem;
   border-radius: 1rem 0;
   color: var(--grey-0);
@@ -3160,8 +3157,7 @@ main >.inner {
   width: calc(100% - 1rem);
   transform-style: preserve-3d;
   transform: translateZ(-2rem);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: 5rem;
   left: 0.5rem;
   top: 0.8rem;
@@ -3222,8 +3218,7 @@ main >.inner {
   border-radius: 0.375rem;
   height: 100%;
   width: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: ease-in-out 600ms;
 }
